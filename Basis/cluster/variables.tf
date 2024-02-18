@@ -15,17 +15,17 @@ variable "eks-nodegroup-name" {
 
 variable "iam-role-eks-cluster-name" {
   type    = string
-  default = "iam-role-eks-cluster"
+  default = "eks-cluster-iam-role"
 }
 
 variable "iam-role-eks-nodegroup-name" {
   type    = string
-  default = "iam-role-eks-nodegroup"
+  default = "eks-nodegroup-iam-role"
 }
 
 variable "sg-eks-cluster-name" {
   type    = string
-  default = "sg-eks-cluster"
+  default = "eks-cluster-sg"
 }
 
 variable "vpc-id" {
