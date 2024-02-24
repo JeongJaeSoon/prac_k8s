@@ -13,6 +13,11 @@ variable "eks-nodegroup-name" {
   default = "eks-nodegroup"
 }
 
+variable "eks-nodegroup-name-2" {
+  type    = string
+  default = "eks-nodegroup2"
+}
+
 variable "iam-role-eks-cluster-name" {
   type    = string
   default = "eks-cluster-iam-role"
