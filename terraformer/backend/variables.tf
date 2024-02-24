@@ -11,5 +11,4 @@ variable "s3_bucket_name" {
 variable "ddb_table_name" {
   type    = string
   default = "ddb-tf-state-lock"
-
 }
