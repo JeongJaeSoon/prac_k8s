@@ -66,9 +66,9 @@ resource "aws_launch_template" "launch-template" {
   disable_api_stop        = "false"
   disable_api_termination = "false"
 
-  iam_instance_profile {
-    name = "eks-f4c6ed57-17e4-86b6-ceb8-7a7b43df5add"
-  }
+  # iam_instance_profile {
+  #   name = "eks-f4c6ed57-17e4-86b6-ceb8-7a7b43df5add"
+  # }
 
   image_id      = "ami-0ab84face2beaa17b"
   instance_type = "t3a.medium"
@@ -77,7 +77,7 @@ resource "aws_launch_template" "launch-template" {
     http_put_response_hop_limit = "2"
   }
 
-  name = "eks-f4c6ed57-17e4-86b6-ceb8-7a7b43df5add"
+  name = "launch-template"
 
   network_interfaces {
     device_index       = "0"
